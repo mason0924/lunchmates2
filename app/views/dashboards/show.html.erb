@@ -15,6 +15,7 @@
               <h5><%= event.event_name %></h5>
               <p> At <%= event.restaurant_name %></p>
               <p class="date"> At <%= event.date.strftime("%A, %b %d") %></p>
+              <%= link_to "Confirm",  events_path(@booking)  %>
            </div>
           </div>
         <% end %>
@@ -38,7 +39,7 @@
             </div>
             <div class="lockup">
               <h5><%= booking.event.event_name %></h5>
-              <%= link_to "Confirm", booking_path(booking) %>
+              <%= link_to "Confirm", events_path(@bookings)  %>
            </div>
           </div>
         <% end %>
@@ -46,8 +47,5 @@
     </div>
   </div>
 </div>
-
-
-
 
 
