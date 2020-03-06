@@ -27,4 +27,16 @@
   }
 }
 
+.btn-home-second {
+  background-color: #FFEEE6;
+  border: 1px solid #FFEEE6;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  width:100%;
+  &:hover {
+    color:#808080;
+  }
+}
 
