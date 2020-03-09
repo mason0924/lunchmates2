@@ -62,9 +62,12 @@
   </div>
 </div>
 
+<div>
 <% @event.messages.each do |message| %>
-<%=  message.content%>
+<%= message.user.first_name%> wrote:
+<%=  message.content %>
 <% end %>
+</div>
 
 <%= simple_form_for([@event, @message]) do |f| %>
 <%= f.input :content %>
